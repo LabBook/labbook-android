@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal">
+
+    <ImageButton android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="8dip" />
+    <TextView android:id="@+id/expNameText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="24dip"
+        android:padding="8dip"
+        android:textColor="@color/white" />
+<!-- 
+    <ImageButton android:id="@+id/icon" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:src="@drawable/labbook"
+        android:gravity="right" android:layout_alignParentRight="true"
+        android:onClick="onClick" />
+ -->
+</LinearLayout>

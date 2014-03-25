@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ga_api_key">UA-28771337-2</string>
+
+  <!--
+  <bool name="ga_debug">true</bool>
+  <bool name="ga_dryRun">true</bool>
+  -->
+  <bool name="ga_auto_activity_tracking">true</bool>
+
+  <!-- We want to see simple, descriptive names in the Google Analytics reports
+       instead of the canonical name for each Activity. -->
+  <string name="uk.ac.ic.bss.labbook.NotesList">NotesList</string>
+  <string name="uk.ac.ic.bss.labbook.LabBookActivity">LabBookActivity</string>
+  <string name="uk.ac.ic.bss.labbook.AboutActivity">AboutActivity</string>
+  <string name="uk.ac.ic.bss.labbook.VoiceRecognition">VoiceRecognition</string>
+  <string name="uk.ac.ic.bss.labbook.backend.AuthActivity">AuthActivity</string>
+  <string name="uk.ac.ic.bss.labbook.backend.CIFSActivity">CIFSActivity</string>
+  <string name="uk.ac.ic.bss.labbook.backend.RegistrationActivity">RegistrationActivity</string>
+  <string name="uk.ac.ic.bss.labbook.backend.SyncActivity">SyncActivity</string>
+  <string name="uk.ac.ic.bss.labbook.calculator.Calculator">Calculator</string>
+  <string name="uk.ac.ic.bss.labbook.media.Camcorder">Camcorder</string>
+  <string name="uk.ac.ic.bss.labbook.media.VideoPlayer">VideoPlayer</string>
+  <string name="uk.ac.ic.bss.labbook.media.ImageViewer">ImageViewer</string>
+  <string name="uk.ac.ic.bss.labbook.stocksolution.StockSolutionActivity">StockSolutionActivity</string>
+</resources>

@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.ic.bss.labbook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- backend -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- /backend -->
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+	<uses-feature android:required="false" android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:name="LabBook"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".NotesList"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".calculator.Calculator"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".stocksolution.StockSolutionActivity"
+			android:label="@string/app_name" />
+		<activity android:name=".VoiceRecognition" />
+		<activity android:name=".LabBookActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="portrait" />
+		<activity android:name=".media.VideoPlayer"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".media.Camcorder"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".media.ImageViewer"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".AboutActivity" />
+
+		<!-- backend -->
+		<activity android:icon="@drawable/cifs" android:label="Network Drive"
+			android:name=".backend.CIFSActivity" android:enabled="false">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<data android:mimeType="image/*" />
+				<data android:mimeType="application/*" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:label="Credentials" android:name=".backend.AuthActivity"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity android:label="Registration" android:name=".backend.RegistrationActivity"
+			android:theme="@android:style/Theme.Dialog" />
+		<service android:name=".backend.sync.AuthenticationService">
+			<intent-filter>
+				<action android:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+		</service>
+		<service android:name=".backend.sync.SyncService">
+			<intent-filter>
+				<action android:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			 <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+		</service>
+		<provider android:name=".backend.sync.DummyContentProvider" android:authorities="@string/content_authority"/>
+		<!-- /backend -->
+    </application>
+</manifest>

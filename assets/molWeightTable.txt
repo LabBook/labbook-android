@@ -1,0 +1,76 @@
+calcium (Ca)	40
+magnesium (Mg)	24.3
+sodium (Na)	23
+potassium (K)	39
+hydrogen (H)	1
+chloride (Cl)	35.5
+sulfate (SO4)	96
+bicarbonate (HCO3)	61
+carbonate (CO3)	60
+silicon (Si)	28.1
+silica (SiO2)	60.1
+hydrogen silicate (HSiO3)	77
+aluminum (Al)	27
+ferrous (Fe2)	55.8
+ferric (Fe3)	55.8
+manganous (Mn2)	54.9
+manganic (Mn3)	54.9
+fluoride (F)	19
+Phosphorus3 (P3)	31
+Phosphorus5 (P5)	31
+lime (Ca(OH)2)	74
+calcium carbonate (CaCO3)	100
+calcium bicarbonate (Ca(HCO3)2)	162
+calcium sulfate (CaSO4)	136
+calcium chloride (CaCl2)	111
+magnesium hydroxide (Mg(OH)2)	58.3
+magnesium carbonate (MgCO3)	84.3
+magnesium bicarbonate (Mg(HCO3)2)	146.3
+magnesium sulfate (MgSO4)	120.3
+magnesium silicate (Mg(HSiO3)2)	178.3
+sodium hydroxide (NaOH)	40
+sodium carbonate (Na2CO3)	106
+sodium bicarbonate (Na(HCO3))	84
+sodium sulfate (Na2SO4)	142
+sodium chloride (NaCl)	58.5
+potassium hydroxide (KOH)	56.1
+potassium carbonate (K2CO3)	138
+potassium bicarbonate (K(HCO3))	100
+potassium sulfate (K2SO4)	174
+potassium chloride (KCl)	74.6
+aluminum hydroxide (Al(OH)3)	78
+aluminum carbonate (Al2(CO3)3)	234
+aluminum bicarbonate (Al(HCO3)3)	210
+aluminum sulfate (Al2(SO4)3)	342.1
+aluminum chloride (AlCl3)	133
+aluminum silicate (Al(HSiO3)3)	258
+alumina (Al2O3)	101.9
+ferrous hydroxide (Fe(OH)2)	89.8
+ferrous carbonate (Fe(CO3))	115.8
+ferrous bicarbonate (Fe(HCO3)2)	177.8
+ferrous sulfate (FeSO4)	151.8
+ferrous chloride (FeCl2)	126.8
+ferric hydroxide (Fe(OH)3)	106.8
+ferric carbonate (Fe2(CO3)3)	291.6
+ferric bicarbonate (Fe(HCO3)3)	238.8
+ferric sulfate (Fe2(SO4)3)	399.6
+ferric chloride (FeCl3)	162.3
+ferric silicate (Fe(HSiO3)3)	286.8
+carbon dioxide (CO2)	44
+nitrogen3 (N3)	14
+nitrogen5 (N5)	14
+nitrate (NO3)	62
+sodium hypochlorite (NaClO)	74
+sodium bisulfite (NaHSO3)	104
+copper (Cu)	63.8
+copper sulfate (CuSO4)	160
+ammonia (NH3)	17
+ammonium (NH4)	18
+carbon (C)	12
+water (H2O)	18
+hydrate (OH)	17
+phosphate radical (PO4)	95
+carbonic acid (H2CO3)	62
+hydrochloric acid (HCL)	36.5
+sulfuric acid (H2SO4)	98
+phosphoric acid (H3PO4)	98

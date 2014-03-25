@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+ <TextView
+        android:id="@+id/molweightlabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Molecular Weight:"/>
+    <AutoCompleteTextView 
+android:id="@+id/molWeightSelector" 
+android:layout_width="250dp" 
+android:layout_height="wrap_content"
+android:hint="type compound name"></AutoCompleteTextView>    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        >
+	    <EditText
+	        android:id="@+id/molweightentry"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:background="@android:drawable/editbox_background"
+	        android:inputType="numberDecimal"
+	        android:hint="or enter molecular weight"/>
+		<TextView
+	        android:id="@+id/molweightunit"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="g/mol"/>
+ </LinearLayout>       
+ 
+ <TextView
+        android:id="@+id/conclabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Concentration of stock solution:"
+        android:paddingTop="20dp"/>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        >       
+    <EditText
+        android:id="@+id/concentry"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/conclabel"
+        android:layout_gravity="center_vertical"
+        android:inputType="numberDecimal"
+        />
+      <kankan.wheel.widget.WheelView android:id="@+id/molarity"
+        android:layout_height="70dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/molweightentry"/> 
+       </LinearLayout> 
+          
+ <TextView
+        android:id="@+id/volumelabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume of stock solution:"
+         android:paddingTop="20dp"/>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        >       
+    <EditText
+        android:id="@+id/volumeentry"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/volumelabel"
+        android:layout_gravity="center_vertical"
+        android:inputType="numberDecimal"
+        />
+     <kankan.wheel.widget.WheelView android:id="@+id/volume_wheel"
+        android:layout_height="70dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/volumeentry"/> 
+       </LinearLayout> 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        >              
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volumeentry"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="Calculate" />
+        <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volumeentry"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="Close" />
+    </LinearLayout>     
+         <TextView
+        android:id="@+id/answer_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="20dp"/>
+  
+
+</LinearLayout>

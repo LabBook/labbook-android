@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/title_layout"
+		android:weightSum="1.0">
+		<EditText android:id="@+id/titletext" android:inputType="text"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight=".85" />
+		<TextView android:id="@+id/pagetext" style="@style/TitleEditor"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight=".15" />
+	</LinearLayout>
+	<uk.ac.ic.bss.labbook.CustomScrollView
+		android:id="@+id/myscroll" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@id/title_layout"
+		android:layout_marginBottom="60dp">
+		<RelativeLayout android:id="@+id/rlayout1"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<!-- <ViewFlipper android:id="@+id/myflipper" android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" > -->
+			<!-- <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" > <EditText android:id="@+id/notetext" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="top|left" 
+				android:longClickable="false" android:inputType="textMultiLine" android:minLines="30" 
+				/> <uk.ac.ic.bss.labbook.DrawOverlay android:id="@+id/overlay" android:background="#0000" 
+				android:layout_alignTop="@id/notetext" android:layout_alignBottom="@id/notetext" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" /> -->
+			<!-- </RelativeLayout> -->
+			<!--</ViewFlipper> -->
+
+		</RelativeLayout>
+	</uk.ac.ic.bss.labbook.CustomScrollView>
+
+	<!-- layout for the menu buttons at bottom of screen -->
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_alignParentBottom="true" android:layout_height="60dp"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:gravity="center" android:layout_below="@id/rlayout1" >
+
+		<HorizontalScrollView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:paddingBottom="10dp" >
+
+				<Button android:id="@+id/prevbut" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentLeft="true" android:text="Prev"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+				
+				<Button android:id="@+id/keyboardButton"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/keyboard_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+				
+				<Button android:id="@+id/penButton"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/pencil_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+				
+				<Button android:id="@+id/eraseButton" 
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/eraser_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/attachButton"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/attach_button"
+					android:onClick="addAttachment" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/cameraButton" 
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/camera_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/volumeButton" 
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/volume_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/flaskButton" 
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/flask_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/scanButton"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="4dp" android:background="@drawable/barcode_button"
+					android:onClick="onClick" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+
+				<Button android:id="@+id/saveButton" 
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:background="@drawable/save_button"
+					android:onClick="save" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1" />
+				
+				<Button android:id="@+id/nextbut" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true" android:text="Next"
+					android:onClick="onClick" />
+
+			</LinearLayout>
+		</HorizontalScrollView>
+	</LinearLayout>
+	<!-- end of menu buttons -->
+
+
+</RelativeLayout>
+<!-- android:scaleType="fitXY" -->
